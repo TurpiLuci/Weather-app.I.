@@ -1,0 +1,218 @@
+h1 { 
+ margin: 5px auto 3px auto;
+}
+h2 {
+  padding: 2px 2px;
+  font-size: 33px;
+}
+
+h6 {
+  display: block;
+  font-size: 12px;
+  margin: auto;
+}
+
+h5 {
+  font-size: 17px;
+  padding: 2px 2px;
+  margin: 20px 200px;
+  max-width: 280px;
+  text-align: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.4); 
+}
+form {
+  display: block;
+  text-align: center;
+}
+p {
+  font-size: 15px;
+  padding-inline-start: 0 auto; 
+  text-align: center;
+}
+li {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  
+}
+.animation { 
+  margin: 0 45px;
+  padding: 7px;
+   border: 3px solid grey;
+   border-radius: 60px;
+  width: 450px;
+  display: block;
+}
+.currentweather:first-letter {
+  text-transform: capitalize;
+}
+#sky {
+  overflow: hidden;
+  border-radius: 60px;
+
+} 
+#clouds {
+	width: 200%;
+  height: 650px;
+  background-image: url('https://image.freepik.com/free-photo/sky-sunset-time_1150-26253.jpg');
+  background-size: cover;
+  background-repeat: initial;
+	-webkit-animation: movingclouds 35s linear infinite;
+	-moz-animation: movingclouds 35s linear infinite;
+  o-animation: movingclouds 35s linear infinite;
+ 
+}
+
+@keyframes movingclouds {
+	0% {margin-left: 0%;}
+	100% {margin-left: -100%;}
+}
+.background {
+  opacity: 1.3;
+  position: absolute;
+  z-index: -1;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+.container {
+  font-family: Noto Sans JP, sans-serif;
+  color: white;
+}
+.buttons {
+  text-align: center;
+  display: block;
+  padding: 14px;
+  color: grey;
+}
+.search {
+  padding: 9px 10px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #fff;
+  font-family: Noto Sans JP, sans-serif;
+  text-decoration: none;
+  transition: all 200ms ease;
+  box-shadow: rgba(37, 39, 89, 0.08) 10px 10px 8px 10;
+}
+
+.go {
+  padding: 9px 10px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #fff;
+  font-family: Noto Sans JP, sans-serif;
+  color: rgb(92, 88, 88);
+  font-weight: 100;
+  cursor: pointer;
+  transition: all 200ms ease;
+  box-shadow: rgba(144, 144, 150, 0.568) 10px 10px 8px 10;
+}
+
+.time {
+  padding: 1px 2px;
+  color: white;
+  font-size: 20px;
+}
+.currentweather {
+  font-size: 30px;
+}
+.weather-forecast { 
+  margin-top: 10px;
+}
+.weather-forecast h3 {
+  color:white;
+  font-size: 17px;
+  font-weight: 450;
+  text-align: center;
+  height: 15px;
+  line-height: 15px;
+  padding-top: 7px;
+}
+.weather-forecast img { 
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 50px; 
+  color: #fff;
+}
+.weather-forecast-temperature { 
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 15px;
+  white-space: nowrap;
+}
+
+
+.wholeApp {
+  text-align: center;
+  max-width: 580px;
+  margin: auto;
+  padding: 3px;
+  
+}
+.buttonCurrentLocation {
+  padding: 8px 9px;
+  margin: 0 auto; 
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid #fff;
+  font-family: Noto Sans JP, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 200ms ease;
+  box-shadow: rgba(68, 68, 71, 0.178) 10px 10px 8px 10;
+}
+.units { 
+  font-family: Noto Sans JP, sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 auto; 
+  position: relative;
+  top: -10px;
+
+}
+.units .active { 
+  color: white;
+  text-decoration: none;
+}
+.units .active :hover {
+  text-decoration: none;
+  color: black;
+  cursor: default;
+}
+.fahrenheit { 
+  text-decoration: none;
+
+}
+#temperature { 
+  font-size: 32px;
+}
+#city { 
+  margin: 3px;
+  padding: 4px;  
+}
+#icon { 
+  color: #fff;
+  height: 74px;
+  width: 74px;
+  margin: 2px; 
+}
+.col-2 { 
+  display: inline-block;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  white-space: nowrap;
+  margin: 6px 6px;
+  padding-bottom: 10px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.4); 
+}

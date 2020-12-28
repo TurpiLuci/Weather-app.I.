@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Weather app</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="src/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/ddc3ee268a.js" crossorigin="anonymous"></script>
+  <script rel="src/index.js"></script>
+</head>
+
+<body>
+  <div class="wholeApp">
+    <div class="background">
+      <div class="animation">
+        <div id="sky">
+          <div id="clouds"></div>
+        </div>
+      </div>
+    </div>
+    <h1 class="buttons"><div class="vertical">
+      <form id="search-form">
+        <input id="city-input" class="search" type="search" placeholder="Search city..." autocomplete="off"
+          autofocus="on" />
+        <input class="go" type="submit" value="Go" />
+      </form>
+      <button class="buttonCurrentLocation" id="buttonCurrentLocation" type="submit">
+        📍
+      </button>
+      </div>
+    </h1>
+    <div class="container">
+      <div class="outline">
+        <h2 id="city"></h2>
+
+        <h3>
+          Last updated: <span id="date"></span>
+        </h3>
+        <h4>
+          <div class="currentweather" id="currentweather"></div>
+          <div><img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon" class="float-right" /></div>
+        </h4>
+        <h5>
+          <span class="temperature" id="temperature">63</span>
+          <span class="units" id="units"><a href="#" id="fahrenheit-link" class="fahrenheit">°F</a>|<a href="#" id="celsius-link" class="active">°C</a>
+          </span>
+          <ul>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li>Wind: <span id="wind"></span>km/h</li>
+          </ul>
+        </h5>
+      </div>
+        
+          <div class="row weather-forecast" id="forecast"></div>
+    </div>
+    <script src="src/index.js"></script>
+  </div>
+</body>
+
+</html>
