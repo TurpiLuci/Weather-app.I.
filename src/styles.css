@@ -43,6 +43,7 @@ li {
    border-radius: 60px;
   width: 450px;
   display: block;
+  box-shadow:  7px 7px 8px 8px #888888;
 }
 .currentweather:first-letter {
   text-transform: capitalize;
@@ -88,29 +89,38 @@ li {
   display: block;
   padding: 14px;
   color: grey;
+
 }
+
 .search {
   padding: 9px 10px;
-  border-radius: 12px;
-  background: #fff;
-  border: 1px solid #fff;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
   font-family: Noto Sans JP, sans-serif;
   text-decoration: none;
-  transition: all 200ms ease;
-  box-shadow: rgba(37, 39, 89, 0.08) 10px 10px 8px 10;
 }
 
 .go {
-  padding: 9px 10px;
-  border-radius: 12px;
-  background: #fff;
-  border: 1px solid #fff;
-  font-family: Noto Sans JP, sans-serif;
-  color: rgb(92, 88, 88);
-  font-weight: 100;
-  cursor: pointer;
-  transition: all 200ms ease;
-  box-shadow: rgba(144, 144, 150, 0.568) 10px 10px 8px 10;
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  flex: 1 1 auto;
+  margin: 5px;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+
+}
+.go:hover { 
+  background: white;
+  color: #9dd6f0 ;
+
 }
 
 .time {
@@ -158,16 +168,21 @@ li {
   
 }
 .buttonCurrentLocation {
-  padding: 8px 9px;
-  margin: 0 auto; 
-  border-radius: 12px;
-  background: #fff;
-  border: 1px solid #fff;
-  font-family: Noto Sans JP, sans-serif;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 200ms ease;
-  box-shadow: rgba(68, 68, 71, 0.178) 10px 10px 8px 10;
+   background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 51%, #a1c4fd 100%);
+  flex: 1 1 auto;
+  margin: 5px;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+.buttonCurrentLocation:hover { 
+  background: white;
+  color: #9dd6f0 ;
 }
 .units { 
   font-family: Noto Sans JP, sans-serif;
@@ -215,4 +230,13 @@ li {
   padding-bottom: 10px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.4); 
+}
+.Summary{ 
+  text-align: center;
+  margin: 20px; 
+  padding: 15px;
+  color: gray;
+  font-size: 13px;
+  font-family: Noto Sans JP, sans-serif;
+  
 }

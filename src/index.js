@@ -1,3 +1,4 @@
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
 
@@ -153,6 +154,5 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 
 search("New York");
-
 
 
